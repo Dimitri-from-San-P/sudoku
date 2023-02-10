@@ -21,7 +21,7 @@ function readAndSolve(error, fileData) {
     puzzleNumber = puzzles.length;
   }
 
-  // Получить желаемый судоку по индексу и вывести его в консоль.
+  // Получить желаемый судоку по индексу и вывести его в консоль..
   const puzzle = puzzles[puzzleNumber - 1];
   console.log(`Решаем судоку №${puzzleNumber}:`);
   console.log(puzzle, '\n');
