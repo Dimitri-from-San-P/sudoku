@@ -1,0 +1,86 @@
+body {
+  background: #1d1b26;
+  font-family: 'Abril Fatface', cursive;
+  font-family: 'IBM Plex Mono', monospace;
+  font-family: 'Shadows Into Light', cursive;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 200px;
+  margin-bottom: 60px;
+}
+.title {
+  color: bisque;
+  font-size: 80px;
+  display: flex;
+  align-self: center;
+  text-shadow: 5px 5px #558abb;
+}
+.main {
+  display: flex;
+  justify-content: space-around;
+}
+.youtube {
+  text-decoration: none;
+  color: rgb(219, 210, 210);
+  display: inline-block;
+  position: relative;
+  padding: 15px 30px;
+  border: 1px solid;
+  border-image: linear-gradient(180deg, #ff3000, #ed0200, #ff096c, #d50082);
+  border-image-slice: 1;
+  margin: 10px 20px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  overflow: hidden;
+  letter-spacing: 2px;
+  transition: 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.youtube:before {
+  content: '';
+  /* z-index: -1; */
+  color: rgb(255, 253, 253);
+  background: linear-gradient(180deg, #ff3000, #ed0200, #ff096c, #d50082);
+  transition: 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.youtube:hover {
+  background: rgba(255, 255, 255, 0);
+}
+.youtube:hover:before {
+  bottom: 0%;
+  top: auto;
+  height: 100%;
+}
+.solution{
+  text-decoration: none;
+  color: rgb(219, 210, 210);
+  display: inline-block;
+  position: relative;
+  padding: 15px 30px;
+  border: 1px solid;
+  border-image: linear-gradient(180deg, #ff3000, #ed0200, #ff096c, #d50082);
+  border-image-slice: 1;
+  margin: 10px 20px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  overflow: hidden;
+  letter-spacing: 2px;
+  transition: 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.solution:before{
+  content: '';
+  /* z-index: -1; */
+  color: rgb(255, 253, 253);
+  background: linear-gradient(180deg, #ff3000, #ed0200, #ff096c, #d50082);
+  transition: 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.solution:hover{
+  background: rgba(255, 255, 255, 0);
+}
+.solution:hover:before{
+  bottom: 0%;
+  top: auto;
+  height: 100%;
+}

@@ -1,8 +1,5 @@
-/**
- * Принимает игровое поле в формате строки — как в файле sudoku-puzzles.txt.
- * Возвращает игровое поле после попытки его решить.
- * Договорись со своей командой, в каком формате возвращать этот результат.
- */
+// const solution = document.querySelector('.solution');
+
 function solve(boardString) {
   // Разбивка задачи на массив 9x9:
   const newBoardString = boardString.split('');
@@ -106,44 +103,11 @@ function isSolved(board) {
  */
 
 function prettyBoard(board) {
-  const arrRowLine = ['-', '-', '-', '+', '-', '-', '-', '+', '-', '-', '-'];
-
-  board.splice(3, 0, arrRowLine);
-  board.splice(7, 0, arrRowLine);
-
-  const pretty = board.join('\n').replaceAll(',', ' ');
-
-  let prettyBoard = '';
-
-  for (let i = 0; i < pretty.length; i++) {
-    if (
-      i === 5 ||
-      i === 11 ||
-      i === 23 ||
-      i === 29 ||
-      i === 41 ||
-      i === 47 ||
-      i === 81 ||
-      i === 87 ||
-      i === 99 ||
-      i === 105 ||
-      i === 117 ||
-      i === 123 ||
-      i === 157 ||
-      i === 163 ||
-      i === 175 ||
-      i === 181 ||
-      i === 193 ||
-      i === 199
-    ) {
-      prettyBoard = `${prettyBoard + pretty[i]}| `;
-    } else {
-      prettyBoard += pretty[i];
-    }
-  }
-  return prettyBoard;
+  console.table(board);
 }
-
+// solution.addEventListener('click', () => {
+//   solve();
+// });
 // Экспортировать функции для использования в другом файле (например, readAndSolve.js).
 module.exports = {
   solve,
