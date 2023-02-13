@@ -107,7 +107,8 @@ function prettyBoard(board) {
 }
 // solution.addEventListener('click', () => {
 //   solve();
-// });
+// }); // подумать как реализовать
+
 // Экспортировать функции для использования в другом файле (например, readAndSolve.js).
 module.exports = {
   solve,
